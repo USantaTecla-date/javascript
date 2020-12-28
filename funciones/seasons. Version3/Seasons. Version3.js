@@ -51,7 +51,7 @@ showResults(20, 12, 1999);
 showResults(21, 12, 1999);
 showResults(31, 12, 1999);
 
-let day = parseInt(prompt("Dia de la fecha [1-31]: "));
+let day = parseInt(prompt("Dia de la fecha [1-30]: "));
 let month = parseInt(prompt("Mes de la fecha [1-12]: "));
 let year = parseInt(prompt("Año de la fecha [1-2020]: "));
 showResults(day, month, year);

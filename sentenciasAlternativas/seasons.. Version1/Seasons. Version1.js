@@ -1,6 +1,6 @@
-let day = prompt("Dia de la fecha [1-30]: "); //TODO bajar a 30
-let month = prompt("Mes de la fecha [1-12]: ");
-let year = prompt("Año de la fecha [1-2020]: ");
+let day = parseInt(prompt("Dia de la fecha [1-30]: ")); 
+let month = parseInt(prompt("Mes de la fecha [1-12]: "));
+let year = parseInt(prompt("Año de la fecha [1-2020]: "));
 
 let season = "invierno";
 if (((day >= 21 && month == 3) || month > 3) && ((day < 21 && month == 6) || month < 6)) {

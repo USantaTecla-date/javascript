@@ -1,6 +1,6 @@
-let day = prompt("Dia de la fecha [1-31]: ");
-let month = prompt("Mes de la fecha [1-12]: ");
-let year = prompt("Año de la fecha [1-2020]: ");
+let day = parseInt(prompt("Dia de la fecha [1-30]: "));
+let month = parseInt(prompt("Mes de la fecha [1-12]: "));
+let year = parseInt(prompt("Año de la fecha [1-2020]: "));
 let days = (month - 1) * 30 + day;
 let season = "invierno";
 let trimester = 0;
