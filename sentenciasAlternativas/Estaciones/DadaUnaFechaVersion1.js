@@ -1,4 +1,4 @@
-let day = prompt("Dia de la fecha [1-31]: ");
+let day = prompt("Dia de la fecha [1-30]: "); //TODO bajar a 30
 let month = prompt("Mes de la fecha [1-12]: ");
 let year = prompt("Año de la fecha [1-2020]: ");
 

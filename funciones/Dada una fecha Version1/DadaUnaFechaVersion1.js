@@ -28,6 +28,19 @@ function getPosition(day, month) {
     return "primeros";
 }
 
+let msg = "";
+msg += "1, 1:" + getSeason(1, 1) + "\n";
+msg += "20, 3:" + getSeason(20, 3) + "\n";
+msg += "21, 3:" + getSeason(21, 3) + "\n";
+msg += "20, 6:" + getSeason(20, 6) + "\n";
+msg += "21, 6:" + getSeason(21, 6) + "\n";
+msg += "20, 9:" + getSeason(20, 9) + "\n";
+msg += "21, 9:" + getSeason(21, 9) + "\n";
+msg += "20, 12:" + getSeason(20, 12) + "\n";
+msg += "21, 12:" + getSeason(21, 12) + "\n";
+msg += "31, 12:" + getSeason(31, 12) + "\n";
+alert(msg);
+
 let day = prompt("Dia de la fecha [1-31]: ");
 let month = prompt("Mes de la fecha [1-12]: ");
 let year = prompt("Año de la fecha [1-2020]: ");

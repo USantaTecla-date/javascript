@@ -8,7 +8,6 @@ function getSeason(day, month) {
     if (80 < days && days <= 350) {
         trimester = parseInt((days - 81) / 90) + 1;
     }
-    alert(days + " " + trimester);
     if (trimester == 1) {
         return "primavera";
     }
@@ -35,7 +34,24 @@ function getPosition(day, month) {
     return "primeros";
 } 
 
-let day = prompt("Dia de la fecha [1-31]: ");
-let month = prompt("Mes de la fecha [1-12]: ");
-let year = prompt("Año de la fecha [1-2020]: ");
-alert("El " + day + " del " + month + " de " + year + " cae a " + getPosition(day, month) + " " + getSeason(day, month) + ".");
+function showResults(day, month, year){
+    alert("El " + day + " del " + month + " de " + year + " cae a " 
+    + getPosition(day, month) + " " + getSeason(day, month) + ".\n");
+}
+
+
+showResults(1, 1, 1999);
+showResults(20, 3, 1999);
+showResults(21, 3, 1999);
+showResults(20, 6, 1999);
+showResults(21, 6, 1999);
+showResults(20, 9, 1999);
+showResults(21, 9, 1999);
+showResults(20, 12, 1999);
+showResults(21, 12, 1999);
+showResults(31, 12, 1999);
+
+let day = parseInt(prompt("Dia de la fecha [1-31]: "));
+let month = parseInt(prompt("Mes de la fecha [1-12]: "));
+let year = parseInt(prompt("Año de la fecha [1-2020]: "));
+showResults(day, month, year);
